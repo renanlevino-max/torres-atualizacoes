@@ -1,0 +1,277 @@
+{
+ "versao": "2026-11-24",
+ "atualizado_em": "24/11/2026",
+ "aviso": "Informação geral sobre as regras do MEI. Para o seu caso, fale com o seu contador.",
+ "temas": [
+  {
+   "id": "limite",
+   "nome": "Limite e faturamento",
+   "perguntas": [
+    {
+     "p": "Qual é o limite de faturamento do MEI?",
+     "r": "Em <b>{ano}</b> o limite é <b>{limite_ano}</b> no ano, o que dá <b>{limite_mes}</b> por mês em média.\n\nPela LC 238/2026 o limite sobe para <b>R$ 110.000,00 em 2027</b> e <b>R$ 140.000,00 de 2028 em diante</b>. O aumento não vale para anos anteriores.\n\nNo painel do Torres você vê quanto já faturou, a projeção do ano e quanto ainda pode faturar."
+    },
+    {
+     "p": "MEI pode faturar mais de {limite_ano} em {ano}?",
+     "r": "Pode passar, mas tem consequência:\n\n<b>Até 20% acima</b> (até {limite_20}): continua MEI até o fim do ano, paga um DAS complementar sobre o excesso junto com a declaração anual e vira microempresa (ME) a partir de 1º de janeiro do ano seguinte.\n\n<b>Mais de 20% acima</b>: o desenquadramento volta para 1º de janeiro do próprio ano (ou para a data de abertura). Os impostos do ano inteiro são recalculados como ME, com juros e multa.\n\nO novo limite de 2027 não salva quem passou em {ano}."
+    },
+    {
+     "p": "Abri o MEI no meio do ano. Qual é o meu limite?",
+     "r": "No ano de abertura o limite é proporcional: <b>{limite_mes} vezes o número de meses</b> do mês de abertura até dezembro. O mês de abertura conta inteiro.\n\nExemplo: aberto em julho de {ano}, são 6 meses, então o limite é 6 x {limite_mes}.\n\nO Torres já faz essa conta sozinho pela data de abertura do cadastro."
+    },
+    {
+     "p": "O que conta como faturamento do MEI?",
+     "r": "Tudo o que o MEI recebe pela atividade: vendas e serviços, <b>com ou sem nota fiscal</b>, em dinheiro, Pix ou cartão.\n\nNão conta: dinheiro pessoal que entra na conta, transferência entre contas suas, empréstimo e devolução.\n\nNo Torres, o extrato bancário separa o que é receita do que é pessoal ou transferência."
+    },
+    {
+     "p": "O que acontece se eu estourar o limite e não avisar?",
+     "r": "A Receita cruza notas, maquininhas de cartão, Pix e a declaração anual. Se achar excesso, pode desenquadrar o MEI <b>de ofício</b>, com cobrança dos impostos como microempresa, juros e multa.\n\nO melhor é se antecipar: acompanhe a projeção no painel e, se for passar, converse com o contador para pedir o desenquadramento no momento certo."
+    },
+    {
+     "p": "Qual é o limite para comprar mercadorias?",
+     "r": "Não existe limite separado para compras. Mas compras muito acima do faturamento chamam atenção da Receita, porque indicam venda sem nota ou sem declarar.\n\nA regra prática: as compras precisam ser compatíveis com o que você vende."
+    }
+   ]
+  },
+  {
+   "id": "das",
+   "nome": "DAS (guia mensal)",
+   "perguntas": [
+    {
+     "p": "Quanto é o DAS do MEI em {ano}?",
+     "r": "O DAS é fixo e não depende do quanto você faturou. Em <b>{ano}</b>:\n\n<b>Comércio ou indústria:</b> {das_comercio}\n<b>Serviço:</b> {das_servico}\n<b>Comércio e serviço:</b> {das_ambos}\n\nÉ formado por 5% do salário mínimo de INSS ({das_inss}), mais R$ 1,00 de ICMS para comércio e indústria e R$ 5,00 de ISS para serviço."
+    },
+    {
+     "p": "Quando vence o DAS?",
+     "r": "Todo <b>dia 20</b> do mês seguinte ao mês de referência. Exemplo: o DAS de março vence em 20 de abril. Se cair em fim de semana ou feriado, vence no próximo dia útil.\n\nA guia oficial é gerada no <b>PGMEI</b> (Portal do Empreendedor ou app MEI). O Torres mostra os vencimentos e avisa o que está atrasado em <a href=\"/das\">Guias DAS</a>."
+    },
+    {
+     "p": "Paguei o DAS atrasado. Tem multa?",
+     "r": "Sim. Multa de <b>0,33% por dia</b> de atraso, limitada a <b>20%</b>, mais juros pela taxa Selic. Basta gerar a guia de novo no PGMEI que o valor já vem atualizado.\n\nDAS em atraso por muito tempo pode ir para a <b>dívida ativa</b> e o tempo sem pagar não conta para a aposentadoria."
+    },
+    {
+     "p": "Preciso pagar o DAS se não faturei nada no mês?",
+     "r": "<b>Sim.</b> O DAS é devido todo mês enquanto o CNPJ estiver aberto, mesmo sem nenhuma venda. Só deixa de ser cobrado quando o MEI é baixado."
+    },
+    {
+     "p": "Posso colocar o DAS em débito automático?",
+     "r": "Sim, pelo PGMEI ou pelo app MEI, em bancos conveniados. No cadastro do MEI no Torres marque <i>débito automático</i>: o sistema passa a pedir só a conferência do débito, em vez de avisar como atraso."
+    },
+    {
+     "p": "O DAS do MEI dá direito a quais benefícios do INSS?",
+     "r": "Com o DAS em dia o MEI tem: <b>aposentadoria por idade</b> (de 1 salário mínimo), <b>auxílio por incapacidade</b> (após 12 meses de contribuição), <b>salário-maternidade</b> (após 10 meses), e para a família <b>pensão por morte</b> e <b>auxílio-reclusão</b>.\n\nAposentadoria por tempo de contribuição não entra: para isso é preciso complementar com mais 15% em guia GPS (código 1910)."
+    }
+   ]
+  },
+  {
+   "id": "dasn",
+   "nome": "Declaração anual (DASN-SIMEI)",
+   "perguntas": [
+    {
+     "p": "Quando entregar a declaração anual do MEI?",
+     "r": "A DASN-SIMEI do ano anterior vence em <b>31 de maio</b>. Em {ano} foi a de {ano_ant}.\n\nNela você informa o total que faturou no ano (separando comércio e serviço) e se teve empregado. É entregue no Portal do Empreendedor."
+    },
+    {
+     "p": "Qual é a multa por entregar a declaração atrasada?",
+     "r": "Multa de 2% ao mês sobre os impostos declarados, com <b>mínimo de R$ 50,00</b>. Se entregar antes de ser notificado pela Receita, a multa cai pela metade.\n\nA multa aparece como guia para pagar depois da entrega."
+    },
+    {
+     "p": "Preciso declarar mesmo sem ter faturado nada?",
+     "r": "<b>Sim.</b> A declaração é obrigatória todo ano enquanto o CNPJ estiver aberto, mesmo com faturamento zero. Sem a declaração o CNPJ pode ser cancelado e as dívidas ficam no seu CPF."
+    },
+    {
+     "p": "De onde tiro o valor para a declaração?",
+     "r": "No Torres, abra <a href=\"/declaracao\">Declaração anual</a>: ele soma as receitas do ano (notas, recebimentos sem nota e extrato) e separa comércio e serviço. Confira com o extrato antes de transmitir.\n\nDepois de entregar, guarde o recibo no Torres, na mesma tela."
+    },
+    {
+     "p": "Errei a declaração. Dá para corrigir?",
+     "r": "Sim. No mesmo portal existe a <b>declaração retificadora</b>, que substitui a anterior. Se o novo valor gerar imposto a mais, sai uma guia complementar."
+    }
+   ]
+  },
+  {
+   "id": "nota",
+   "nome": "Nota fiscal",
+   "perguntas": [
+    {
+     "p": "MEI é obrigado a emitir nota fiscal?",
+     "r": "<b>Para empresa (pessoa jurídica) e órgão público, sim, sempre.</b> Para consumidor pessoa física a nota é dispensada, mas é recomendável emitir, porque prova o seu faturamento.\n\nMesmo sem nota, o valor recebido conta para o limite e precisa entrar na declaração anual. Vender sem nota para empresa é irregular e a Receita cruza esses dados."
+    },
+    {
+     "p": "Como emito nota de serviço (NFS-e)?",
+     "r": "Desde 2023 o MEI emite NFS-e pelo <b>Emissor Nacional</b> (site ou app NFS-e Mobile). Dá para entrar com gov.br, certificado digital ou login e senha do emissor.\n\nNo Torres, o painel <i>Acessos do MEI</i> no menu tem o botão <b>Emitir NFS-e</b> e guarda os logins e senhas."
+    },
+    {
+     "p": "Como emito nota de venda de mercadoria?",
+     "r": "Para venda de mercadoria o MEI usa a NF-e. No Rio de Janeiro dá para emitir a <b>Nota Fiscal Avulsa (NFA-e)</b> pelo site da SEFAZ-RJ, com login e senha da SEFAZ.\n\nNo Torres, o painel <i>Acessos do MEI</i> tem o botão <b>Emitir nota de venda (NFA-e RJ)</b>."
+    },
+    {
+     "p": "Recebi sem emitir nota. O que faço?",
+     "r": "O valor entra no faturamento do mesmo jeito. No Torres ele aparece como <b>receita sem nota</b> (pelo extrato ou lançamento manual), e o sistema avisa no painel e na tela de notas.\n\nSe o cliente for empresa, emita a nota. Ela é obrigatória nesse caso."
+    },
+    {
+     "p": "Cancelei uma nota. Sai do faturamento?",
+     "r": "Sim. Nota cancelada não conta. No Torres, ao importar o XML do cancelamento (ou buscar na Receita), a nota é marcada como cancelada e sai das receitas sozinha."
+    }
+   ]
+  },
+  {
+   "id": "empregado",
+   "nome": "Funcionário",
+   "perguntas": [
+    {
+     "p": "Quantos funcionários o MEI pode ter?",
+     "r": "Em <b>{ano}</b> o máximo é <b>{empregados}</b>. Pela LC 238/2026, a partir de <b>1º de janeiro de 2027</b> o MEI pode ter <b>até 2 empregados</b> ao mesmo tempo.\n\nO salário precisa ser de 1 salário mínimo ou o piso da categoria. Se um empregado se afastar (licença, por exemplo), dá para contratar um substituto durante o afastamento."
+    },
+    {
+     "p": "Quanto custa um funcionário para o MEI?",
+     "r": "Além do salário, o MEI recolhe <b>3% de INSS patronal</b> e <b>8% de FGTS</b> sobre o salário, e desconta o INSS do empregado. Também entram 13º, férias com 1/3 e vale-transporte.\n\nTudo é feito pelo <b>eSocial</b> (módulo simplificado do MEI). Antes de contratar, compare o custo com o faturamento."
+    }
+   ]
+  },
+  {
+   "id": "dividas",
+   "nome": "Dívidas, parcelamento e perdão",
+   "perguntas": [
+    {
+     "p": "Como funciona o perdão das dívidas do MEI (LC 238/2026)?",
+     "r": "A LC 238/2026 perdoa <b>as dívidas do MEI com a União</b> (na prática, o INSS do DAS) <b>constituídas até 13/10/2026</b>, com multa e juros, inclusive as que estão em dívida ativa, na justiça ou parceladas.\n\nO perdão é <b>automático</b>, previsto para valer em <b>1º de janeiro de 2027</b>. Para manter, é preciso <b>pagar em dia os DAS dos 6 meses seguintes</b>. Atrasou, perde.\n\nNão é perdoado: ICMS e ISS (são do estado e do município). O que já foi pago não é devolvido.\n\n<i>A regulamentação ainda pode mudar detalhes.</i>"
+    },
+    {
+     "p": "Nunca entreguei a declaração. Entro no perdão?",
+     "r": "<b>Ainda não está claro.</b> A lei fala em dívida constituída até 13/10/2026, e no MEI quem constitui a dívida é a declaração anual. Declaração entregue depois dessa data pode ficar de fora.\n\nAté sair a regulamentação, a orientação é conferir a situação do CNPJ com o contador antes de transmitir declarações atrasadas."
+    },
+    {
+     "p": "Como parcelo o DAS atrasado?",
+     "r": "Pelo <b>PGMEI</b> (Portal do Empreendedor) dá para parcelar os DAS em atraso em <b>até 60 vezes</b>, com parcela mínima de R$ 50,00. Débitos que já foram para a <b>dívida ativa</b> são parcelados no <b>Regularize</b>, da PGFN.\n\nNo Torres, registre o parcelamento em <a href=\"/parcelamentos\">Parcelamentos e situação fiscal</a> para acompanhar parcelas pagas e as que faltam."
+    },
+    {
+     "p": "O que é o Desenrola MEI?",
+     "r": "É uma negociação da PGFN, com <b>desconto</b> (não é perdão), para dívidas do MEI já inscritas em <b>dívida ativa</b>. A adesão é pelo <b>Regularize</b> até <b>29/01/2027</b>.\n\nComo o perdão da LC 238 vem em 2027, vale avaliar caso a caso. Pode compensar para quem precisa de certidão negativa antes de janeiro."
+    },
+    {
+     "p": "Tenho parcelamento ativo. Ele entra no perdão?",
+     "r": "Pela LC 238/2026, o saldo de dívidas parceladas <b>constituídas até 13/10/2026</b> entra no perdão. O que já foi pago não volta.\n\nAté o perdão valer (previsto para 2027), continue pagando as parcelas para o parcelamento não ser cancelado."
+    },
+    {
+     "p": "Como sei se o MEI tem dívida?",
+     "r": "No <b>PGMEI</b> (consulta de extrato e pendências) você vê os DAS em aberto. A dívida ativa aparece no <b>Regularize</b> (PGFN). A <b>certidão negativa</b> da Receita e PGFN mostra se está tudo regular.\n\nNo Torres, anote a data e o resultado de cada consulta em <a href=\"/parcelamentos\">Parcelamentos e situação fiscal</a>. O painel avisa quando faz tempo que não consulta."
+    }
+   ]
+  },
+  {
+   "id": "regras",
+   "nome": "Regras gerais do MEI",
+   "perguntas": [
+    {
+     "p": "MEI pode ter sócio?",
+     "r": "<b>Não.</b> O MEI é só do titular. Também não pode ser sócio, administrador ou titular de outra empresa. Se precisar de sócio, é preciso virar microempresa (ME)."
+    },
+    {
+     "p": "Quais atividades o MEI pode exercer?",
+     "r": "Só as atividades da lista oficial do MEI (CNAEs permitidos pelo Comitê Gestor do Simples Nacional). Profissões regulamentadas e intelectuais, como advogado, médico, contador, engenheiro e consultor, <b>não podem</b> ser MEI.\n\nO Torres compara o código de serviço das notas com os CNAEs do cadastro e avisa quando a nota está fora da atividade."
+    },
+    {
+     "p": "Quando o MEI vira microempresa (ME)?",
+     "r": "Quando passa do limite de faturamento, contrata mais empregados do que o permitido, abre filial, entra sócio, passa a exercer atividade não permitida ou o titular entra em outra empresa.\n\nO desenquadramento é pedido no Portal do Simples Nacional. Depois disso a empresa paga o Simples Nacional sobre o faturamento e precisa de contador."
+    },
+    {
+     "p": "Como dou baixa no MEI?",
+     "r": "A baixa é gratuita, pelo <b>Portal do Empreendedor</b>. Depois é preciso entregar a declaração de extinção (DASN-SIMEI de situação especial).\n\nAtenção: as dívidas do MEI <b>não somem</b> com a baixa. Elas passam para o CPF do titular."
+    },
+    {
+     "p": "Posso trabalhar de carteira assinada e ter MEI?",
+     "r": "Pode. O MEI continua pagando o DAS normalmente. Um cuidado: se for demitido, o seguro-desemprego pode ser negado se o MEI tiver renda suficiente para o sustento."
+    }
+   ]
+  },
+  {
+   "id": "torres",
+   "nome": "Como usar o Torres",
+   "perguntas": [
+    {
+     "p": "Como começo a organizar o meu MEI no Torres?",
+     "r": "1. Em <a href=\"/meis\">Cadastro de MEIs</a>, cadastre pelo CNPJ (ele puxa os dados da Receita).\n2. Em <a href=\"/importar\">Importar notas</a>, envie os XML ou PDF das notas do ano.\n3. Em <a href=\"/extratos\">Extratos bancários</a>, importe o extrato e classifique os lançamentos.\n4. Em <a href=\"/das\">Guias DAS</a>, gere as guias do ano e marque as pagas.\n5. Acompanhe tudo no <a href=\"/\">Painel</a>."
+    },
+    {
+     "p": "Como importo o extrato do banco?",
+     "r": "Em <a href=\"/extratos\">Extratos bancários</a>, envie o arquivo (OFX, Excel, CSV ou PDF). Cada linha recebe uma sugestão: recebimento com nota, recebimento sem nota, despesa, DAS, gasto pessoal ou transferência.\n\nClique em <i>Aceitar sugestões</i> e corrija o que estiver errado. Marque <i>Lembrar</i> para o próximo mês já vir classificado."
+    },
+    {
+     "p": "Como baixo as notas automaticamente?",
+     "r": "Em <a href=\"/nfse-nacional\">Baixar notas (Receita)</a>, cadastre o certificado digital A1 (.pfx). O Torres busca as NFS-e emitidas e recebidas e as NF-e de compras e vendas, sem duplicar.\n\nNFS-e aceita o certificado do escritório com procuração no e-CAC. NF-e exige o certificado do próprio MEI. Sem certificado, importe o XML ou o PDF em <a href=\"/importar\">Importar notas</a>."
+    },
+    {
+     "p": "Como cobro um cliente em atraso?",
+     "r": "Abra <b>Financeiro</b> no menu (aparece para MEI de terceiros). Nas abas <i>Honorários</i>, <i>Cobranças avulsas</i> e <i>Regularização</i> você lança, vê os dias de atraso e clica em <i>Receber</i>. O botão <i>Copiar cobrança</i> monta a mensagem para o WhatsApp. Todos os clientes de uma vez: <a href=\"/financeiro/geral\">Inadimplência</a>."
+    },
+    {
+     "p": "Como faço backup?",
+     "r": "Clique no seu nome no canto de baixo do menu, depois em <i>Baixar backup</i>. Com a <i>Pasta de backup extra</i> (Google Drive, por exemplo) cada backup também é copiado para lá. O Torres faz backup sozinho antes de excluir ou importar em lote."
+    },
+    {
+     "p": "Como gero o relatório do mês para o cliente?",
+     "r": "Em <a href=\"/relatorio-mensal\">Relatório mensal em PDF</a> escolha o mês: sai um PDF com faturamento, despesas, limite, DAS e pendências, pronto para mandar. No <a href=\"/\">Painel</a> o botão de mensagem monta o resumo para o WhatsApp."
+    },
+    {
+     "p": "Como levo tudo para outro computador?",
+     "r": "Clique no seu nome no canto de baixo do menu e abra <i>Dados e troca de computador</i>, depois <i>Exportar tudo</i>. No outro computador, instale o Torres e use <i>Importar tudo</i>. As senhas gov.br precisam ser digitadas de novo."
+    }
+   ]
+  },
+  {
+   "id": "problemas",
+   "nome": "Problemas no sistema",
+   "perguntas": [
+    {
+     "p": "A tela abriu vazia ou sumiram os MEIs",
+     "r": "1. Feche o Torres e abra de novo pelo ícone da <b>área de trabalho</b>.\n2. Se continuar vazio, clique no seu nome no canto de baixo do menu, depois em <i>Restaurar backup</i>.\n3. Escolha o backup mais recente que tenha os seus MEIs e clique em <i>Restaurar</i>.\n\nO Torres faz backup sozinho todo dia e antes de cada atualização, então os dados não se perdem. Se não resolver, fale com o suporte (link abaixo)."
+    },
+    {
+     "p": "Apareceu \"página não encontrada\"",
+     "r": "Acontece quando a tela aberta era de outro MEI (por exemplo, a edição de uma nota) e você trocou de MEI. Clique em <a href=\"/\">Painel</a> e abra a tela de novo pelo menu. Se não resolver, fale com o suporte (link abaixo)."
+    },
+    {
+     "p": "A busca do CNPJ deu erro",
+     "r": "A consulta usa o site da Receita, que às vezes fica fora do ar ou lento (erro 503 ou tempo esgotado). Espere alguns minutos e tente de novo.\n\nOutra opção: em <a href=\"/meis\">Cadastro de MEIs</a>, use <i>Cadastrar por CNPJ / PDF</i> e envie o PDF do cartão CNPJ ou do CCMEI. Se não resolver, fale com o suporte (link abaixo)."
+    },
+    {
+     "p": "O extrato não importou ou veio errado",
+     "r": "1. Prefira o arquivo <b>OFX</b> do banco: é o mais confiável.\n2. PDF só funciona se tiver texto (o que dá para selecionar com o mouse). PDF escaneado ou foto não lê.\n3. Se as entradas e saídas vieram trocadas, corrija a classificação na tela do extrato e marque <i>Lembrar</i>.\n\nLançamentos repetidos são ignorados, então pode importar o mesmo período de novo sem duplicar. Se não resolver, fale com o suporte (link abaixo)."
+    },
+    {
+     "p": "A nota não entrou ou aparece repetida",
+     "r": "O Torres não duplica nota: se ela já existe (mesma chave, ou mesmo número e cliente), a importação só atualiza.\n\nSe não entrou, confira se o arquivo é o <b>XML</b> da nota ou o <b>PDF do DANFE</b> com texto. Imagem e print não são lidos. Em último caso, registre à mão em <a href=\"/notas\">Notas fiscais</a>, botão <i>+ Registrar nota</i>. Se não resolver, fale com o suporte (link abaixo)."
+    },
+    {
+     "p": "A busca de notas na Receita deu erro",
+     "r": "Confira em <a href=\"/nfse-nacional\">Baixar notas (Receita)</a>:\n\n<b>Certificado vencido ou senha errada:</b> cadastre de novo o arquivo .pfx com a senha certa.\n<b>NF-e (venda e compra):</b> a Receita só aceita o certificado <b>do próprio MEI</b>. O do escritório não serve.\n<b>NFS-e com o certificado do escritório:</b> o MEI precisa ter dado procuração no e-CAC.\n<b>\"Esperar 1 hora\":</b> a Receita limita as buscas quando não há nota nova. Tente mais tarde. Se não resolver, fale com o suporte (link abaixo)."
+    },
+    {
+     "p": "O valor do DAS está diferente do esperado",
+     "r": "1. Confira a <b>atividade</b> no cadastro do MEI (comércio, serviço ou os dois): ela muda o valor.\n2. Confira a tabela do ano em <a href=\"/config/regras\">Limites, DAS e CNAE por ano</a>.\n3. Guia paga com atraso tem multa e juros: lance o valor total pago na guia. Se não resolver, fale com o suporte (link abaixo)."
+    },
+    {
+     "p": "O painel mostra um aviso que já resolvi",
+     "r": "O aviso some quando a informação é registrada no Torres:\n\n<b>DAS:</b> marque como paga em <a href=\"/das\">Guias DAS</a>.\n<b>Declaração anual:</b> registre o recibo em <a href=\"/declaracao\">Declaração anual</a>.\n<b>Receita sem nota:</b> ligue o recebimento à nota na tela do extrato.\n<b>Parcela:</b> clique em <i>Parcela paga</i> em <a href=\"/parcelamentos\">Parcelamentos</a>. Se não resolver, fale com o suporte (link abaixo)."
+    },
+    {
+     "p": "Apareceu \"Atualizar agora\"",
+     "r": "É uma versão nova do Torres. Clique em <b>Atualizar agora</b>: o sistema faz backup, instala e abre de novo sozinho. Não precisa baixar nada nem reinstalar, e os dados continuam lá."
+    },
+    {
+     "p": "O Windows mostrou um aviso azul ao instalar",
+     "r": "É normal em programa novo. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>."
+    },
+    {
+     "p": "Esqueci a minha senha do Torres",
+     "r": "Quem é administrador redefine a senha em <i>Gerenciar usuários</i> (no seu nome, canto de baixo do menu). Se você é o único administrador, fale com o suporte."
+    },
+    {
+     "p": "O Torres pede a chave de liberação",
+     "r": "Na tela de ativação aparece o <b>ID de Instalação</b>. Mande esse código para o suporte, receba a chave, cole na tela e clique em <i>Ativar</i>. A chave vale só naquele computador: trocou de computador, precisa de chave nova."
+    }
+   ]
+  }
+ ]
+}
